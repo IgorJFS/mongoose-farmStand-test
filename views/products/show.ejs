@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %></title>
+</head>
+<body>
+
+    <h1><%= product.name %></h1>
+    <p>Price: $<%= product.price %></p>
+    <p>Category: <%= product.category %></p>
+
+    <a href="/products">Back to Products</a> <br>
+    <a href="/products/<%= product._id %>/edit">Edit Product</a>
+    
+</body>
+</html>
