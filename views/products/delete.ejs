@@ -1,0 +1,16 @@
+<!-- views/products/delete.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Product</title>
+</head>
+<body>
+    <h1>Delete Product</h1>
+    <p>Are you sure you want to delete <strong><%= product.name %></strong>?</p>
+    <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
+        <button type="submit">Yes, Delete</button>
+        <a href="/products/<%= product._id %>">Cancel</a>
+    </form>
+</body>
+</html>

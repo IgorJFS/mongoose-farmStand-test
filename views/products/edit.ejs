@@ -20,12 +20,12 @@
     </div>
     <label for="category">Category:</label>
     <select name="category" id="category">
-        <option value="fruit">fruit</option>
-        <option value="dairy">dairy</option>
-        <option value="vegetable">vegetable</option>
+        <% for(let category of categories){ %>
+        <option value=<%= category %> <%= product.category === category ? 'selected': '' %>><%=category%></option>
+        <% } %>
         </select><br>
 <button type="submit">Edit Product</button> <br>
-<a href="/products">Back to Products</a> 
+<a href="/products">Back to Products</a>
 
 </body>
 </html>
